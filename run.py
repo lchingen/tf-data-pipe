@@ -8,8 +8,8 @@ if __name__ == '__main__':
     # Create TF Records
     train, val, test = get_db_sets('db')
     create_tf_record(train, 'train')
-    create_tf_record(train, 'val')
-    create_tf_record(train, 'test')
+    create_tf_record(val, 'val')
+    create_tf_record(test, 'test')
 
     # Create dataset
     dataset = create_dataset(path='./db/train.tfrecords',
