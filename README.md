@@ -1,10 +1,10 @@
 # Tensorflow Data Pipeline
 
 #### Purpose
-A reference repository for implementing a data pipeline for TF-based deep learning projects. 
+A reference repository on how to extract Tendorflow records and a simple implementation of the data pipeline. 
 
 #### How to Run
-```python
-# Test TF Record creation and reading it back 
-python3 run.py
+```console
+# Create TF Record based on images in ./db and perform read loopback
+>> python3 run.py
 ```
